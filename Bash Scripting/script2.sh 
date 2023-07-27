@@ -1,0 +1,49 @@
+#! /bin/bash
+ 
+ isvalid=true
+
+ echo " bienvenue administrateur "
+
+#Define the repository URL
+read -p 'enter the url of your repository : ' REPO_URL 
+
+while [ $isvalid ]
+do
+
+    #Define the images names
+    read -p  " enter the name that you want for your image : " i
+    #Build the images
+    echo " processus of login "
+    echo ""
+    echo ""
+    echo ""
+
+    #docker login
+     sleep 3s
+    echo " Build the images" 
+
+
+    echo ""
+    echo ""
+    echo ""
+    docker build -t i .
+    #Tag the images
+     sleep 3s
+    echo "Tag the images" 
+
+    echo ""
+    echo ""
+    echo ""
+
+    docker tag i:latest $REPO_URL:latest
+
+sleep 3s
+    #Push the images to the repository
+
+   echo " Push the images to the repository"
+   echo ""
+    echo ""
+    echo ""
+    docker push $REPO_URL:latest
+ echo " votre image a été push avec succès"
+done 
