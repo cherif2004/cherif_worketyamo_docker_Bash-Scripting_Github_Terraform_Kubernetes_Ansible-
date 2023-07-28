@@ -2,7 +2,7 @@ resource "kubernetes_service" "single_pod_service" {
   depends_on = [ kubernetes_pod.single_pod ]
   metadata {
     name = "service-ssh-cherif"
-    namespace = "worketyamo"
+    namespace = "rashid"
     labels = var.labels_of_pods
   }
 

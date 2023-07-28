@@ -15,7 +15,7 @@ variable "single_pod" {
   ,
   {
     container_name = "contenair-ssh-cherif-2"
-    pod_name = "cherif-pod-1"
+    pod_name = "cherif-pod-2"
   }
   ,
   {

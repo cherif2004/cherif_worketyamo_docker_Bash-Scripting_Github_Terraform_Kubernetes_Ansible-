@@ -2,8 +2,14 @@ DOCKER/
 Bash Scripting/
 Bash Scripting/Readme.md 
 Terraform
-Kubernetes/EXERCICE-1
-Kubernetes/EXERCICE-2
+Kubernetes/EXERCICE-1/
+Kubernetes/EXERCICE-2/
 Kubernetes/deployment.tf
 Kubernetes/variables.tf
+Kubernetes/EXERCICE-3/
 
+Kubernetes/EXERCICE-1/kubernetes/kubernetes-ssh/main.tf
+Kubernetes/EXERCICE-1/kubernetes/kubernetes-ssh/service.tf
+Kubernetes/EXERCICE-1/kubernetes/kubernetes-ssh/variables.tf
+
+Kubernetes/EXERCICE-1/kubernetes/terraform.tfstate
