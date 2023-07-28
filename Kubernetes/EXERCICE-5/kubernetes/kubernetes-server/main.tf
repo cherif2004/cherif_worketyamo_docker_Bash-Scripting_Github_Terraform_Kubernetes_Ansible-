@@ -28,16 +28,22 @@ resource "kubernetes_deployment" "cherif_deploy" {
         container {
           image = var.httpd-image-name
           name  = "httpd-ct"
+          command = [ "sleep" ]
+          args = [ "infinity" ]
         }
 
         container {
           image = var.nginx-image-name
           name  = "nginx-ct"
+          command = [ "sleep" ]
+          args = [ "infinity" ]
         }
       }
     }
   }
 }
+
+   
 
 resource "kubernetes_service" "service_cherif" {
   metadata {
@@ -53,7 +59,7 @@ resource "kubernetes_service" "service_cherif" {
     port {
       port        = 80
       target_port = 80
-      node_port = 30004
+      
     }
   }
 }
